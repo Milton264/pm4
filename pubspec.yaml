@@ -1,0 +1,28 @@
+name: valhalla
+description: Valhalla, gestión de barbería con acceso central por usuario y sucursal.
+publish_to: none
+version: 0.3.1+5
+environment:
+  sdk: '>=3.9.0 <4.0.0'
+dependencies:
+  supabase: 2.16.1
+  valhalla_core:
+    path: packages/valhalla_core
+  http: ^1.6.0
+  shared_preferences: ^2.5.3
+  flutter:
+    sdk: flutter
+  uuid: ^4.5.1
+dev_dependencies:
+  test: ^1.25.0
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: ValhallaSans
+      fonts:
+        - asset: assets/fonts/DejaVuSans.ttf
+        - asset: assets/fonts/DejaVuSans-Bold.ttf
+          weight: 700
