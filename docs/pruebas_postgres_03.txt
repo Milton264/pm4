@@ -1,0 +1,15 @@
+OK Instalación PostgreSQL íntegra
+OK Semilla repetible sin duplicados
+OK Primera cuenta reservada y acceso por sucursal
+OK Encargado administra catálogos y equipo
+OK WhatsApp crea clientes y citas, barbero solo confirma sus cortes
+OK Cobro, pago, comisión, fidelidad e idempotencia
+OK Stock insuficiente revierte todos los registros
+OK Membresías conservan nombre y servicios del momento de compra
+OK Gastos, cierre y control del saldo esperado
+OK Fidelidad, cumpleaños y precios históricos
+OK Consultas de todos los módulos y cancelación autorizada
+OK Roles no se falsifican; anónimos y escrituras directas rechazados
+OK Desactivar personal y cerrar sesiones revoca el acceso
+OK Registrarse sin autorización o sin verificar correo no concede acceso
+RESULTADO: 14 grupos de pruebas PostgreSQL correctos.

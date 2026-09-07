@@ -1,0 +1,3294 @@
+{
+  "columns": [
+    {
+      "table_name": "banco",
+      "column_name": "id_banco",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "banco",
+      "column_name": "codigo",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "banco",
+      "column_name": "nombre",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "banco",
+      "column_name": "activo",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "beneficio_cumpleanos",
+      "column_name": "id",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "beneficio_cumpleanos",
+      "column_name": "id_cliente",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "beneficio_cumpleanos",
+      "column_name": "anio",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "beneficio_cumpleanos",
+      "column_name": "id_operacion",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "bitacora_auditoria",
+      "column_name": "id_auditoria",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "bitacora_auditoria",
+      "column_name": "id_usuario",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "bitacora_auditoria",
+      "column_name": "id_sucursal",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "bitacora_auditoria",
+      "column_name": "entidad",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "bitacora_auditoria",
+      "column_name": "id_registro",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "bitacora_auditoria",
+      "column_name": "accion",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "bitacora_auditoria",
+      "column_name": "valor_anterior",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "bitacora_auditoria",
+      "column_name": "valor_nuevo",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "bitacora_auditoria",
+      "column_name": "motivo",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "bitacora_auditoria",
+      "column_name": "fecha_hora",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cita",
+      "column_name": "id_cita",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "cita",
+      "column_name": "id_cliente",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cita",
+      "column_name": "id_sucursal",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cita",
+      "column_name": "id_barbero",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cita",
+      "column_name": "id_creada_por",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cita",
+      "column_name": "fecha_hora",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cita",
+      "column_name": "estado",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cita",
+      "column_name": "observaciones",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cita",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cita",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cita",
+      "column_name": "duracion_minutos",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": "30",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cita",
+      "column_name": "id_confirmada_por",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cita",
+      "column_name": "confirmada_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cita_servicio",
+      "column_name": "id_cita_servicio",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "cita_servicio",
+      "column_name": "id_cita",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cita_servicio",
+      "column_name": "id_servicio",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cita_servicio",
+      "column_name": "cantidad",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": "1",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cita_servicio",
+      "column_name": "observacion",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cliente",
+      "column_name": "id_cliente",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "cliente",
+      "column_name": "nombre_completo",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cliente",
+      "column_name": "telefono",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cliente",
+      "column_name": "fecha_nacimiento",
+      "data_type": "date",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cliente",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cliente",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cliente_nota",
+      "column_name": "id_nota",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "cliente_nota",
+      "column_name": "id_cliente",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cliente_nota",
+      "column_name": "id_usuario",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cliente_nota",
+      "column_name": "texto",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cliente_nota",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "configuracion_negocio",
+      "column_name": "id",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "configuracion_negocio",
+      "column_name": "nombre",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "configuracion_negocio",
+      "column_name": "meta_fidelidad",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "configuracion_negocio",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "configuracion_negocio",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cuadre_caja",
+      "column_name": "id_cuadre_caja",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "cuadre_caja",
+      "column_name": "id_sucursal",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cuadre_caja",
+      "column_name": "id_cerrado_por",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cuadre_caja",
+      "column_name": "idempotency_key",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cuadre_caja",
+      "column_name": "periodo_inicio",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cuadre_caja",
+      "column_name": "periodo_fin",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cuadre_caja",
+      "column_name": "efectivo_esperado",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cuadre_caja",
+      "column_name": "efectivo_contado",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cuadre_caja",
+      "column_name": "diferencia",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cuadre_caja",
+      "column_name": "explicacion_diferencia",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cuadre_caja",
+      "column_name": "estado",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cuadre_caja",
+      "column_name": "fecha_hora_cierre",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "cuadre_caja",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "fidelidad_movimiento",
+      "column_name": "id",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "fidelidad_movimiento",
+      "column_name": "id_cliente",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "fidelidad_movimiento",
+      "column_name": "id_operacion",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "fidelidad_movimiento",
+      "column_name": "puntos",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "fidelidad_movimiento",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "gasto",
+      "column_name": "id_gasto",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "gasto",
+      "column_name": "id_sucursal",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "gasto",
+      "column_name": "id_registrado_por",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "gasto",
+      "column_name": "id_metodo_pago",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "gasto",
+      "column_name": "id_banco",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "gasto",
+      "column_name": "idempotency_key",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "gasto",
+      "column_name": "fecha_hora",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "gasto",
+      "column_name": "categoria",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "gasto",
+      "column_name": "descripcion",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "gasto",
+      "column_name": "monto",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "gasto",
+      "column_name": "observacion",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "gasto",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "gasto",
+      "column_name": "id_cuadre_caja",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "inventario_sucursal",
+      "column_name": "id_inventario_sucursal",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "inventario_sucursal",
+      "column_name": "id_sucursal",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "inventario_sucursal",
+      "column_name": "id_producto",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "inventario_sucursal",
+      "column_name": "stock_actual",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "inventario_sucursal",
+      "column_name": "stock_minimo",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "inventario_sucursal",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia",
+      "column_name": "id_membresia",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "membresia",
+      "column_name": "id_cliente",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia",
+      "column_name": "id_plan_membresia",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia",
+      "column_name": "id_operacion_compra",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia",
+      "column_name": "fecha_compra",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia",
+      "column_name": "fecha_activacion",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia",
+      "column_name": "precio_pagado",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia",
+      "column_name": "servicios_iniciales",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia",
+      "column_name": "estado",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia",
+      "column_name": "fecha_vencimiento",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia",
+      "column_name": "nombre_plan_aplicado",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia_consumo",
+      "column_name": "id_membresia_consumo",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "membresia_consumo",
+      "column_name": "id_membresia",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia_consumo",
+      "column_name": "id_operacion_servicio",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia_consumo",
+      "column_name": "cantidad",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": "1",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia_consumo",
+      "column_name": "fecha_consumo",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia_plan",
+      "column_name": "id_plan_membresia",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "membresia_plan",
+      "column_name": "codigo",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia_plan",
+      "column_name": "nombre",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia_plan",
+      "column_name": "precio",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia_plan",
+      "column_name": "cantidad_servicios",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia_plan",
+      "column_name": "vigencia_desde",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia_plan",
+      "column_name": "vigencia_hasta",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia_plan",
+      "column_name": "activo",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia_plan",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia_plan",
+      "column_name": "duracion_dias",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": "30",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia_plan_servicio",
+      "column_name": "id_plan_servicio",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "membresia_plan_servicio",
+      "column_name": "id_plan_membresia",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia_plan_servicio",
+      "column_name": "id_servicio",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia_servicio",
+      "column_name": "id_membresia",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "membresia_servicio",
+      "column_name": "id_servicio",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "metodo_pago",
+      "column_name": "id_metodo_pago",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "metodo_pago",
+      "column_name": "codigo",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "metodo_pago",
+      "column_name": "nombre",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "metodo_pago",
+      "column_name": "activo",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "motivo_gratuidad",
+      "column_name": "id_motivo_gratuidad",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "motivo_gratuidad",
+      "column_name": "codigo",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "motivo_gratuidad",
+      "column_name": "nombre",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "motivo_gratuidad",
+      "column_name": "activo",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "movimiento_caja",
+      "column_name": "id_movimiento_caja",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "movimiento_caja",
+      "column_name": "id_sucursal",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "movimiento_caja",
+      "column_name": "id_pago",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "movimiento_caja",
+      "column_name": "id_gasto",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "movimiento_caja",
+      "column_name": "id_cuadre_caja",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "movimiento_caja",
+      "column_name": "id_usuario",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "movimiento_caja",
+      "column_name": "tipo_movimiento",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "movimiento_caja",
+      "column_name": "monto",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "movimiento_caja",
+      "column_name": "fecha_hora",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "movimiento_caja",
+      "column_name": "observacion",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "movimiento_inventario",
+      "column_name": "id_movimiento_inventario",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "movimiento_inventario",
+      "column_name": "id_sucursal",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "movimiento_inventario",
+      "column_name": "id_producto",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "movimiento_inventario",
+      "column_name": "id_operacion",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "movimiento_inventario",
+      "column_name": "id_operacion_producto",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "movimiento_inventario",
+      "column_name": "id_gasto",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "movimiento_inventario",
+      "column_name": "id_traslado",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "movimiento_inventario",
+      "column_name": "id_usuario_responsable",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "movimiento_inventario",
+      "column_name": "id_registrado_por",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "movimiento_inventario",
+      "column_name": "tipo_movimiento",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "movimiento_inventario",
+      "column_name": "cantidad",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "movimiento_inventario",
+      "column_name": "fecha_hora",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "movimiento_inventario",
+      "column_name": "observacion",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion",
+      "column_name": "id_operacion",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "operacion",
+      "column_name": "id_cliente",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion",
+      "column_name": "id_cita",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion",
+      "column_name": "id_sucursal",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion",
+      "column_name": "id_barbero",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion",
+      "column_name": "id_registrada_por",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion",
+      "column_name": "id_cuadre_caja",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion",
+      "column_name": "idempotency_key",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion",
+      "column_name": "fecha_hora",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion",
+      "column_name": "estado",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion",
+      "column_name": "total_bruto",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion",
+      "column_name": "total_descuentos",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion",
+      "column_name": "total_cobrado",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion",
+      "column_name": "observaciones",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion_producto",
+      "column_name": "id_operacion_producto",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "operacion_producto",
+      "column_name": "id_operacion",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion_producto",
+      "column_name": "id_producto",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion_producto",
+      "column_name": "cantidad",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion_producto",
+      "column_name": "precio_unitario_aplicado",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion_producto",
+      "column_name": "total_linea",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion_servicio",
+      "column_name": "id_operacion_servicio",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "operacion_servicio",
+      "column_name": "id_operacion",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion_servicio",
+      "column_name": "id_servicio",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion_servicio",
+      "column_name": "id_motivo_gratuidad",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion_servicio",
+      "column_name": "id_regla_comision",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion_servicio",
+      "column_name": "id_autorizado_por",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion_servicio",
+      "column_name": "cantidad",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": "1",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion_servicio",
+      "column_name": "precio_normal",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion_servicio",
+      "column_name": "precio_aplicado",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion_servicio",
+      "column_name": "motivo_descuento",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion_servicio",
+      "column_name": "comentario_descuento",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion_servicio",
+      "column_name": "elegible_fidelidad_aplicado",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion_servicio",
+      "column_name": "base_comision",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "operacion_servicio",
+      "column_name": "monto_comision",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "pago",
+      "column_name": "id_pago",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "pago",
+      "column_name": "id_operacion",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "pago",
+      "column_name": "id_metodo_pago",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "pago",
+      "column_name": "id_banco",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "pago",
+      "column_name": "id_registrado_por",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "pago",
+      "column_name": "monto",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "pago",
+      "column_name": "efectivo_recibido",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "pago",
+      "column_name": "cambio",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "pago",
+      "column_name": "referencia_transferencia",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "pago",
+      "column_name": "fecha_hora",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "producto",
+      "column_name": "id_producto",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "producto",
+      "column_name": "nombre",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "producto",
+      "column_name": "categoria",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "producto",
+      "column_name": "unidad_medida",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "producto",
+      "column_name": "precio_venta_actual",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "producto",
+      "column_name": "activo",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "producto",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "producto",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "regla_comision",
+      "column_name": "id_regla_comision",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "regla_comision",
+      "column_name": "id_servicio",
+      "data_type": "bigint",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "regla_comision",
+      "column_name": "nombre",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "regla_comision",
+      "column_name": "circunstancia",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "regla_comision",
+      "column_name": "tipo_calculo",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "regla_comision",
+      "column_name": "valor",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "regla_comision",
+      "column_name": "vigencia_desde",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "regla_comision",
+      "column_name": "vigencia_hasta",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "regla_comision",
+      "column_name": "activo",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "rol",
+      "column_name": "id_rol",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "rol",
+      "column_name": "codigo",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "rol",
+      "column_name": "nombre",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "rol",
+      "column_name": "activo",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "servicio",
+      "column_name": "id_servicio",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "servicio",
+      "column_name": "nombre",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "servicio",
+      "column_name": "categoria",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "servicio",
+      "column_name": "elegible_fidelidad",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "servicio",
+      "column_name": "elegible_cumpleanos",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "servicio",
+      "column_name": "activo",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "servicio",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "servicio",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "servicio_precio_historial",
+      "column_name": "id_servicio_precio",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "servicio_precio_historial",
+      "column_name": "id_servicio",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "servicio_precio_historial",
+      "column_name": "precio",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "servicio_precio_historial",
+      "column_name": "vigencia_desde",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "servicio_precio_historial",
+      "column_name": "vigencia_hasta",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "servicio_precio_historial",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "solicitud_idempotente",
+      "column_name": "clave",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "solicitud_idempotente",
+      "column_name": "accion",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "solicitud_idempotente",
+      "column_name": "id_usuario",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "solicitud_idempotente",
+      "column_name": "id_sucursal",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "solicitud_idempotente",
+      "column_name": "solicitud",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "solicitud_idempotente",
+      "column_name": "id_resultado",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "solicitud_idempotente",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "sucursal",
+      "column_name": "id_sucursal",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "sucursal",
+      "column_name": "nombre",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "sucursal",
+      "column_name": "activo",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "sucursal",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "sucursal",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "traslado_inventario",
+      "column_name": "id_traslado",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "traslado_inventario",
+      "column_name": "id_sucursal_origen",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "traslado_inventario",
+      "column_name": "id_sucursal_destino",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "traslado_inventario",
+      "column_name": "id_responsable",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "traslado_inventario",
+      "column_name": "idempotency_key",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "traslado_inventario",
+      "column_name": "fecha_hora",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "traslado_inventario",
+      "column_name": "observacion",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "usuario",
+      "column_name": "id_usuario",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "usuario",
+      "column_name": "id_rol",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "usuario",
+      "column_name": "auth_uid",
+      "data_type": "uuid",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "usuario",
+      "column_name": "nombre_completo",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "usuario",
+      "column_name": "activo",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "usuario",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "usuario",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "usuario",
+      "column_name": "correo",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "usuario",
+      "column_name": "acceso_desde",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "'-infinity'::timestamp with time zone",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "usuario_sucursal",
+      "column_name": "id_usuario_sucursal",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "usuario_sucursal",
+      "column_name": "id_usuario",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "usuario_sucursal",
+      "column_name": "id_sucursal",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "usuario_sucursal",
+      "column_name": "es_principal",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "usuario_sucursal",
+      "column_name": "activo",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "usuario_sucursal",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    }
+  ],
+  "constraints": [
+    {
+      "tabla": "banco",
+      "nombre": "banco_activo_check",
+      "tipo": "c",
+      "definicion": "CHECK ((activo = ANY (ARRAY[(0)::bigint, (1)::bigint])))"
+    },
+    {
+      "tabla": "banco",
+      "nombre": "banco_codigo_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (codigo)"
+    },
+    {
+      "tabla": "banco",
+      "nombre": "banco_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_banco)"
+    },
+    {
+      "tabla": "beneficio_cumpleanos",
+      "nombre": "beneficio_cumpleanos_id_cliente_anio_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (id_cliente, anio)"
+    },
+    {
+      "tabla": "beneficio_cumpleanos",
+      "nombre": "beneficio_cumpleanos_id_operacion_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (id_operacion)"
+    },
+    {
+      "tabla": "beneficio_cumpleanos",
+      "nombre": "beneficio_cumpleanos_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id)"
+    },
+    {
+      "tabla": "beneficio_cumpleanos",
+      "nombre": "fk_beneficio_cumpleanos_id_cliente",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_cliente) REFERENCES valhalla_private.cliente(id_cliente)"
+    },
+    {
+      "tabla": "beneficio_cumpleanos",
+      "nombre": "fk_beneficio_cumpleanos_id_operacion",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_operacion) REFERENCES valhalla_private.operacion(id_operacion)"
+    },
+    {
+      "tabla": "bitacora_auditoria",
+      "nombre": "bitacora_auditoria_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_auditoria)"
+    },
+    {
+      "tabla": "bitacora_auditoria",
+      "nombre": "fk_bitacora_auditoria_id_sucursal",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_sucursal) REFERENCES valhalla_private.sucursal(id_sucursal) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "bitacora_auditoria",
+      "nombre": "fk_bitacora_auditoria_id_usuario",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_usuario) REFERENCES valhalla_private.usuario(id_usuario) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "cita",
+      "nombre": "cita_confirmacion_consistente",
+      "tipo": "c",
+      "definicion": "CHECK (((estado = 'ATENDIDA'::text) = ((confirmada_at IS NOT NULL) AND (id_confirmada_por IS NOT NULL))))"
+    },
+    {
+      "tabla": "cita",
+      "nombre": "cita_duracion_minutos_check",
+      "tipo": "c",
+      "definicion": "CHECK (((duracion_minutos >= 5) AND (duracion_minutos <= 480)))"
+    },
+    {
+      "tabla": "cita",
+      "nombre": "cita_estado_valido",
+      "tipo": "c",
+      "definicion": "CHECK ((estado = ANY (ARRAY['PENDIENTE'::text, 'ATENDIDA'::text, 'CANCELADA'::text])))"
+    },
+    {
+      "tabla": "cita",
+      "nombre": "cita_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_cita)"
+    },
+    {
+      "tabla": "cita",
+      "nombre": "fk_cita_id_barbero",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_barbero) REFERENCES valhalla_private.usuario(id_usuario) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "cita",
+      "nombre": "fk_cita_id_cliente",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_cliente) REFERENCES valhalla_private.cliente(id_cliente) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "cita",
+      "nombre": "fk_cita_id_confirmada_por",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_confirmada_por) REFERENCES valhalla_private.usuario(id_usuario) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "cita",
+      "nombre": "fk_cita_id_creada_por",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_creada_por) REFERENCES valhalla_private.usuario(id_usuario) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "cita",
+      "nombre": "fk_cita_id_sucursal",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_sucursal) REFERENCES valhalla_private.sucursal(id_sucursal) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "cita_servicio",
+      "nombre": "cita_servicio_cantidad_check",
+      "tipo": "c",
+      "definicion": "CHECK ((cantidad > 0))"
+    },
+    {
+      "tabla": "cita_servicio",
+      "nombre": "cita_servicio_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_cita_servicio)"
+    },
+    {
+      "tabla": "cita_servicio",
+      "nombre": "fk_cita_servicio_id_cita",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_cita) REFERENCES valhalla_private.cita(id_cita) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "cita_servicio",
+      "nombre": "fk_cita_servicio_id_servicio",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_servicio) REFERENCES valhalla_private.servicio(id_servicio) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "cliente",
+      "nombre": "cliente_datos",
+      "tipo": "c",
+      "definicion": "CHECK ((((length(TRIM(BOTH FROM nombre_completo)) >= 3) AND (length(TRIM(BOTH FROM nombre_completo)) <= 150)) AND ((length(regexp_replace(telefono, '[^0-9]'::text, ''::text, 'g'::text)) >= 8) AND (length(regexp_replace(telefono, '[^0-9]'::text, ''::text, 'g'::text)) <= 15))))"
+    },
+    {
+      "tabla": "cliente",
+      "nombre": "cliente_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_cliente)"
+    },
+    {
+      "tabla": "cliente_nota",
+      "nombre": "cliente_nota_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_nota)"
+    },
+    {
+      "tabla": "cliente_nota",
+      "nombre": "fk_cliente_nota_id_cliente",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_cliente) REFERENCES valhalla_private.cliente(id_cliente)"
+    },
+    {
+      "tabla": "cliente_nota",
+      "nombre": "fk_cliente_nota_id_usuario",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_usuario) REFERENCES valhalla_private.usuario(id_usuario)"
+    },
+    {
+      "tabla": "configuracion_negocio",
+      "nombre": "configuracion_negocio_id_check",
+      "tipo": "c",
+      "definicion": "CHECK ((id = 1))"
+    },
+    {
+      "tabla": "configuracion_negocio",
+      "nombre": "configuracion_negocio_meta_fidelidad_check",
+      "tipo": "c",
+      "definicion": "CHECK (((meta_fidelidad >= 1) AND (meta_fidelidad <= 100)))"
+    },
+    {
+      "tabla": "configuracion_negocio",
+      "nombre": "configuracion_negocio_nombre_check",
+      "tipo": "c",
+      "definicion": "CHECK (((length(TRIM(BOTH FROM nombre)) >= 2) AND (length(TRIM(BOTH FROM nombre)) <= 120)))"
+    },
+    {
+      "tabla": "configuracion_negocio",
+      "nombre": "configuracion_negocio_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id)"
+    },
+    {
+      "tabla": "cuadre_caja",
+      "nombre": "cuadre_caja_check",
+      "tipo": "c",
+      "definicion": "CHECK ((periodo_fin >= periodo_inicio))"
+    },
+    {
+      "tabla": "cuadre_caja",
+      "nombre": "cuadre_caja_check1",
+      "tipo": "c",
+      "definicion": "CHECK (((diferencia = 0) OR (length(TRIM(BOTH FROM COALESCE(explicacion_diferencia, ''::text))) > 0)))"
+    },
+    {
+      "tabla": "cuadre_caja",
+      "nombre": "cuadre_caja_check2",
+      "tipo": "c",
+      "definicion": "CHECK ((diferencia = (efectivo_contado - efectivo_esperado)))"
+    },
+    {
+      "tabla": "cuadre_caja",
+      "nombre": "cuadre_caja_efectivo_contado_check",
+      "tipo": "c",
+      "definicion": "CHECK ((efectivo_contado >= 0))"
+    },
+    {
+      "tabla": "cuadre_caja",
+      "nombre": "cuadre_caja_idempotency_key_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (idempotency_key)"
+    },
+    {
+      "tabla": "cuadre_caja",
+      "nombre": "cuadre_caja_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_cuadre_caja)"
+    },
+    {
+      "tabla": "cuadre_caja",
+      "nombre": "fk_cuadre_caja_id_cerrado_por",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_cerrado_por) REFERENCES valhalla_private.usuario(id_usuario) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "cuadre_caja",
+      "nombre": "fk_cuadre_caja_id_sucursal",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_sucursal) REFERENCES valhalla_private.sucursal(id_sucursal) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "fidelidad_movimiento",
+      "nombre": "fidelidad_movimiento_id_operacion_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (id_operacion)"
+    },
+    {
+      "tabla": "fidelidad_movimiento",
+      "nombre": "fidelidad_movimiento_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id)"
+    },
+    {
+      "tabla": "fidelidad_movimiento",
+      "nombre": "fidelidad_movimiento_puntos_check",
+      "tipo": "c",
+      "definicion": "CHECK (((puntos = 1) OR (puntos < 0)))"
+    },
+    {
+      "tabla": "fidelidad_movimiento",
+      "nombre": "fk_fidelidad_movimiento_id_cliente",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_cliente) REFERENCES valhalla_private.cliente(id_cliente) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "fidelidad_movimiento",
+      "nombre": "fk_fidelidad_movimiento_id_operacion",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_operacion) REFERENCES valhalla_private.operacion(id_operacion) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "gasto",
+      "nombre": "fk_gasto_id_banco",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_banco) REFERENCES valhalla_private.banco(id_banco) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "gasto",
+      "nombre": "fk_gasto_id_cuadre_caja",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_cuadre_caja) REFERENCES valhalla_private.cuadre_caja(id_cuadre_caja)"
+    },
+    {
+      "tabla": "gasto",
+      "nombre": "fk_gasto_id_metodo_pago",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_metodo_pago) REFERENCES valhalla_private.metodo_pago(id_metodo_pago) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "gasto",
+      "nombre": "fk_gasto_id_registrado_por",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_registrado_por) REFERENCES valhalla_private.usuario(id_usuario) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "gasto",
+      "nombre": "fk_gasto_id_sucursal",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_sucursal) REFERENCES valhalla_private.sucursal(id_sucursal) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "gasto",
+      "nombre": "gasto_idempotency_key_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (idempotency_key)"
+    },
+    {
+      "tabla": "gasto",
+      "nombre": "gasto_monto_check",
+      "tipo": "c",
+      "definicion": "CHECK ((monto > 0))"
+    },
+    {
+      "tabla": "gasto",
+      "nombre": "gasto_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_gasto)"
+    },
+    {
+      "tabla": "inventario_sucursal",
+      "nombre": "fk_inventario_sucursal_id_producto",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_producto) REFERENCES valhalla_private.producto(id_producto) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "inventario_sucursal",
+      "nombre": "fk_inventario_sucursal_id_sucursal",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_sucursal) REFERENCES valhalla_private.sucursal(id_sucursal) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "inventario_sucursal",
+      "nombre": "inventario_sucursal_id_sucursal_id_producto_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (id_sucursal, id_producto)"
+    },
+    {
+      "tabla": "inventario_sucursal",
+      "nombre": "inventario_sucursal_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_inventario_sucursal)"
+    },
+    {
+      "tabla": "inventario_sucursal",
+      "nombre": "inventario_sucursal_stock_actual_check",
+      "tipo": "c",
+      "definicion": "CHECK ((stock_actual >= 0))"
+    },
+    {
+      "tabla": "inventario_sucursal",
+      "nombre": "inventario_sucursal_stock_minimo_check",
+      "tipo": "c",
+      "definicion": "CHECK ((stock_minimo >= 0))"
+    },
+    {
+      "tabla": "membresia",
+      "nombre": "fk_membresia_id_cliente",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_cliente) REFERENCES valhalla_private.cliente(id_cliente) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "membresia",
+      "nombre": "fk_membresia_id_operacion_compra",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_operacion_compra) REFERENCES valhalla_private.operacion(id_operacion) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "membresia",
+      "nombre": "fk_membresia_id_plan_membresia",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_plan_membresia) REFERENCES valhalla_private.membresia_plan(id_plan_membresia) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "membresia",
+      "nombre": "membresia_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_membresia)"
+    },
+    {
+      "tabla": "membresia",
+      "nombre": "membresia_precio_pagado_check",
+      "tipo": "c",
+      "definicion": "CHECK ((precio_pagado >= 0))"
+    },
+    {
+      "tabla": "membresia",
+      "nombre": "membresia_servicios_iniciales_check",
+      "tipo": "c",
+      "definicion": "CHECK ((servicios_iniciales > 0))"
+    },
+    {
+      "tabla": "membresia_consumo",
+      "nombre": "fk_membresia_consumo_id_membresia",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_membresia) REFERENCES valhalla_private.membresia(id_membresia) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "membresia_consumo",
+      "nombre": "fk_membresia_consumo_id_operacion_servicio",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_operacion_servicio) REFERENCES valhalla_private.operacion_servicio(id_operacion_servicio) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "membresia_consumo",
+      "nombre": "membresia_consumo_cantidad_check",
+      "tipo": "c",
+      "definicion": "CHECK ((cantidad > 0))"
+    },
+    {
+      "tabla": "membresia_consumo",
+      "nombre": "membresia_consumo_id_operacion_servicio_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (id_operacion_servicio)"
+    },
+    {
+      "tabla": "membresia_consumo",
+      "nombre": "membresia_consumo_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_membresia_consumo)"
+    },
+    {
+      "tabla": "membresia_plan",
+      "nombre": "membresia_plan_activo_check",
+      "tipo": "c",
+      "definicion": "CHECK ((activo = ANY (ARRAY[(0)::bigint, (1)::bigint])))"
+    },
+    {
+      "tabla": "membresia_plan",
+      "nombre": "membresia_plan_cantidad_servicios_check",
+      "tipo": "c",
+      "definicion": "CHECK ((cantidad_servicios > 0))"
+    },
+    {
+      "tabla": "membresia_plan",
+      "nombre": "membresia_plan_codigo_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (codigo)"
+    },
+    {
+      "tabla": "membresia_plan",
+      "nombre": "membresia_plan_duracion_dias_check",
+      "tipo": "c",
+      "definicion": "CHECK ((duracion_dias > 0))"
+    },
+    {
+      "tabla": "membresia_plan",
+      "nombre": "membresia_plan_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_plan_membresia)"
+    },
+    {
+      "tabla": "membresia_plan",
+      "nombre": "membresia_plan_precio_check",
+      "tipo": "c",
+      "definicion": "CHECK ((precio >= 0))"
+    },
+    {
+      "tabla": "membresia_plan_servicio",
+      "nombre": "fk_membresia_plan_servicio_id_plan_membresia",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_plan_membresia) REFERENCES valhalla_private.membresia_plan(id_plan_membresia) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "membresia_plan_servicio",
+      "nombre": "fk_membresia_plan_servicio_id_servicio",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_servicio) REFERENCES valhalla_private.servicio(id_servicio) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "membresia_plan_servicio",
+      "nombre": "membresia_plan_servicio_id_plan_membresia_id_servicio_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (id_plan_membresia, id_servicio)"
+    },
+    {
+      "tabla": "membresia_plan_servicio",
+      "nombre": "membresia_plan_servicio_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_plan_servicio)"
+    },
+    {
+      "tabla": "membresia_servicio",
+      "nombre": "fk_membresia_servicio_id_membresia",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_membresia) REFERENCES valhalla_private.membresia(id_membresia)"
+    },
+    {
+      "tabla": "membresia_servicio",
+      "nombre": "fk_membresia_servicio_id_servicio",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_servicio) REFERENCES valhalla_private.servicio(id_servicio)"
+    },
+    {
+      "tabla": "membresia_servicio",
+      "nombre": "membresia_servicio_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_membresia, id_servicio)"
+    },
+    {
+      "tabla": "metodo_pago",
+      "nombre": "metodo_pago_activo_check",
+      "tipo": "c",
+      "definicion": "CHECK ((activo = ANY (ARRAY[(0)::bigint, (1)::bigint])))"
+    },
+    {
+      "tabla": "metodo_pago",
+      "nombre": "metodo_pago_codigo_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (codigo)"
+    },
+    {
+      "tabla": "metodo_pago",
+      "nombre": "metodo_pago_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_metodo_pago)"
+    },
+    {
+      "tabla": "motivo_gratuidad",
+      "nombre": "motivo_gratuidad_activo_check",
+      "tipo": "c",
+      "definicion": "CHECK ((activo = ANY (ARRAY[(0)::bigint, (1)::bigint])))"
+    },
+    {
+      "tabla": "motivo_gratuidad",
+      "nombre": "motivo_gratuidad_codigo_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (codigo)"
+    },
+    {
+      "tabla": "motivo_gratuidad",
+      "nombre": "motivo_gratuidad_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_motivo_gratuidad)"
+    },
+    {
+      "tabla": "movimiento_caja",
+      "nombre": "fk_movimiento_caja_id_cuadre_caja",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_cuadre_caja) REFERENCES valhalla_private.cuadre_caja(id_cuadre_caja) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "movimiento_caja",
+      "nombre": "fk_movimiento_caja_id_gasto",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_gasto) REFERENCES valhalla_private.gasto(id_gasto) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "movimiento_caja",
+      "nombre": "fk_movimiento_caja_id_pago",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_pago) REFERENCES valhalla_private.pago(id_pago) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "movimiento_caja",
+      "nombre": "fk_movimiento_caja_id_sucursal",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_sucursal) REFERENCES valhalla_private.sucursal(id_sucursal) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "movimiento_caja",
+      "nombre": "fk_movimiento_caja_id_usuario",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_usuario) REFERENCES valhalla_private.usuario(id_usuario) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "movimiento_caja",
+      "nombre": "movimiento_caja_check",
+      "tipo": "c",
+      "definicion": "CHECK (((id_pago IS NULL) OR (id_gasto IS NULL)))"
+    },
+    {
+      "tabla": "movimiento_caja",
+      "nombre": "movimiento_caja_monto_check",
+      "tipo": "c",
+      "definicion": "CHECK ((monto > 0))"
+    },
+    {
+      "tabla": "movimiento_caja",
+      "nombre": "movimiento_caja_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_movimiento_caja)"
+    },
+    {
+      "tabla": "movimiento_caja",
+      "nombre": "movimiento_caja_tipo_movimiento_check",
+      "tipo": "c",
+      "definicion": "CHECK ((tipo_movimiento = ANY (ARRAY['INGRESO'::text, 'EGRESO'::text])))"
+    },
+    {
+      "tabla": "movimiento_inventario",
+      "nombre": "fk_movimiento_inventario_id_gasto",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_gasto) REFERENCES valhalla_private.gasto(id_gasto) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "movimiento_inventario",
+      "nombre": "fk_movimiento_inventario_id_operacion",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_operacion) REFERENCES valhalla_private.operacion(id_operacion) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "movimiento_inventario",
+      "nombre": "fk_movimiento_inventario_id_operacion_producto",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_operacion_producto) REFERENCES valhalla_private.operacion_producto(id_operacion_producto) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "movimiento_inventario",
+      "nombre": "fk_movimiento_inventario_id_producto",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_producto) REFERENCES valhalla_private.producto(id_producto) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "movimiento_inventario",
+      "nombre": "fk_movimiento_inventario_id_registrado_por",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_registrado_por) REFERENCES valhalla_private.usuario(id_usuario) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "movimiento_inventario",
+      "nombre": "fk_movimiento_inventario_id_sucursal",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_sucursal) REFERENCES valhalla_private.sucursal(id_sucursal) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "movimiento_inventario",
+      "nombre": "fk_movimiento_inventario_id_traslado",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_traslado) REFERENCES valhalla_private.traslado_inventario(id_traslado) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "movimiento_inventario",
+      "nombre": "fk_movimiento_inventario_id_usuario_responsable",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_usuario_responsable) REFERENCES valhalla_private.usuario(id_usuario) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "movimiento_inventario",
+      "nombre": "movimiento_inventario_cantidad_check",
+      "tipo": "c",
+      "definicion": "CHECK ((cantidad > 0))"
+    },
+    {
+      "tabla": "movimiento_inventario",
+      "nombre": "movimiento_inventario_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_movimiento_inventario)"
+    },
+    {
+      "tabla": "operacion",
+      "nombre": "fk_operacion_id_barbero",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_barbero) REFERENCES valhalla_private.usuario(id_usuario) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "operacion",
+      "nombre": "fk_operacion_id_cita",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_cita) REFERENCES valhalla_private.cita(id_cita) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "operacion",
+      "nombre": "fk_operacion_id_cliente",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_cliente) REFERENCES valhalla_private.cliente(id_cliente) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "operacion",
+      "nombre": "fk_operacion_id_cuadre_caja",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_cuadre_caja) REFERENCES valhalla_private.cuadre_caja(id_cuadre_caja) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "operacion",
+      "nombre": "fk_operacion_id_registrada_por",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_registrada_por) REFERENCES valhalla_private.usuario(id_usuario) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "operacion",
+      "nombre": "fk_operacion_id_sucursal",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_sucursal) REFERENCES valhalla_private.sucursal(id_sucursal) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "operacion",
+      "nombre": "operacion_check",
+      "tipo": "c",
+      "definicion": "CHECK ((total_cobrado = (total_bruto - total_descuentos)))"
+    },
+    {
+      "tabla": "operacion",
+      "nombre": "operacion_id_cita_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (id_cita)"
+    },
+    {
+      "tabla": "operacion",
+      "nombre": "operacion_idempotency_key_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (idempotency_key)"
+    },
+    {
+      "tabla": "operacion",
+      "nombre": "operacion_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_operacion)"
+    },
+    {
+      "tabla": "operacion",
+      "nombre": "operacion_total_bruto_check",
+      "tipo": "c",
+      "definicion": "CHECK ((total_bruto >= 0))"
+    },
+    {
+      "tabla": "operacion",
+      "nombre": "operacion_total_cobrado_check",
+      "tipo": "c",
+      "definicion": "CHECK ((total_cobrado >= 0))"
+    },
+    {
+      "tabla": "operacion",
+      "nombre": "operacion_total_descuentos_check",
+      "tipo": "c",
+      "definicion": "CHECK ((total_descuentos >= 0))"
+    },
+    {
+      "tabla": "operacion_producto",
+      "nombre": "fk_operacion_producto_id_operacion",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_operacion) REFERENCES valhalla_private.operacion(id_operacion) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "operacion_producto",
+      "nombre": "fk_operacion_producto_id_producto",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_producto) REFERENCES valhalla_private.producto(id_producto) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "operacion_producto",
+      "nombre": "operacion_producto_cantidad_check",
+      "tipo": "c",
+      "definicion": "CHECK ((cantidad > 0))"
+    },
+    {
+      "tabla": "operacion_producto",
+      "nombre": "operacion_producto_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_operacion_producto)"
+    },
+    {
+      "tabla": "operacion_producto",
+      "nombre": "operacion_producto_precio_unitario_aplicado_check",
+      "tipo": "c",
+      "definicion": "CHECK ((precio_unitario_aplicado >= 0))"
+    },
+    {
+      "tabla": "operacion_producto",
+      "nombre": "operacion_producto_total_linea_check",
+      "tipo": "c",
+      "definicion": "CHECK ((total_linea >= 0))"
+    },
+    {
+      "tabla": "operacion_servicio",
+      "nombre": "fk_operacion_servicio_id_autorizado_por",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_autorizado_por) REFERENCES valhalla_private.usuario(id_usuario) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "operacion_servicio",
+      "nombre": "fk_operacion_servicio_id_motivo_gratuidad",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_motivo_gratuidad) REFERENCES valhalla_private.motivo_gratuidad(id_motivo_gratuidad) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "operacion_servicio",
+      "nombre": "fk_operacion_servicio_id_operacion",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_operacion) REFERENCES valhalla_private.operacion(id_operacion) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "operacion_servicio",
+      "nombre": "fk_operacion_servicio_id_regla_comision",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_regla_comision) REFERENCES valhalla_private.regla_comision(id_regla_comision) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "operacion_servicio",
+      "nombre": "fk_operacion_servicio_id_servicio",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_servicio) REFERENCES valhalla_private.servicio(id_servicio) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "operacion_servicio",
+      "nombre": "operacion_servicio_base_comision_check",
+      "tipo": "c",
+      "definicion": "CHECK ((base_comision >= 0))"
+    },
+    {
+      "tabla": "operacion_servicio",
+      "nombre": "operacion_servicio_cantidad_check",
+      "tipo": "c",
+      "definicion": "CHECK ((cantidad > 0))"
+    },
+    {
+      "tabla": "operacion_servicio",
+      "nombre": "operacion_servicio_check",
+      "tipo": "c",
+      "definicion": "CHECK ((precio_aplicado <= precio_normal))"
+    },
+    {
+      "tabla": "operacion_servicio",
+      "nombre": "operacion_servicio_check1",
+      "tipo": "c",
+      "definicion": "CHECK (((id_motivo_gratuidad IS NULL) OR (precio_aplicado = 0)))"
+    },
+    {
+      "tabla": "operacion_servicio",
+      "nombre": "operacion_servicio_check2",
+      "tipo": "c",
+      "definicion": "CHECK ((base_comision = (precio_aplicado * cantidad)))"
+    },
+    {
+      "tabla": "operacion_servicio",
+      "nombre": "operacion_servicio_elegible_fidelidad_aplicado_check",
+      "tipo": "c",
+      "definicion": "CHECK ((elegible_fidelidad_aplicado = ANY (ARRAY[(0)::bigint, (1)::bigint])))"
+    },
+    {
+      "tabla": "operacion_servicio",
+      "nombre": "operacion_servicio_monto_comision_check",
+      "tipo": "c",
+      "definicion": "CHECK ((monto_comision >= 0))"
+    },
+    {
+      "tabla": "operacion_servicio",
+      "nombre": "operacion_servicio_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_operacion_servicio)"
+    },
+    {
+      "tabla": "operacion_servicio",
+      "nombre": "operacion_servicio_precio_aplicado_check",
+      "tipo": "c",
+      "definicion": "CHECK ((precio_aplicado >= 0))"
+    },
+    {
+      "tabla": "operacion_servicio",
+      "nombre": "operacion_servicio_precio_normal_check",
+      "tipo": "c",
+      "definicion": "CHECK ((precio_normal >= 0))"
+    },
+    {
+      "tabla": "pago",
+      "nombre": "fk_pago_id_banco",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_banco) REFERENCES valhalla_private.banco(id_banco) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "pago",
+      "nombre": "fk_pago_id_metodo_pago",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_metodo_pago) REFERENCES valhalla_private.metodo_pago(id_metodo_pago) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "pago",
+      "nombre": "fk_pago_id_operacion",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_operacion) REFERENCES valhalla_private.operacion(id_operacion) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "pago",
+      "nombre": "fk_pago_id_registrado_por",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_registrado_por) REFERENCES valhalla_private.usuario(id_usuario) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "pago",
+      "nombre": "pago_id_operacion_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (id_operacion)"
+    },
+    {
+      "tabla": "pago",
+      "nombre": "pago_monto_check",
+      "tipo": "c",
+      "definicion": "CHECK ((monto >= 0))"
+    },
+    {
+      "tabla": "pago",
+      "nombre": "pago_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_pago)"
+    },
+    {
+      "tabla": "producto",
+      "nombre": "producto_activo_check",
+      "tipo": "c",
+      "definicion": "CHECK ((activo = ANY (ARRAY[(0)::bigint, (1)::bigint])))"
+    },
+    {
+      "tabla": "producto",
+      "nombre": "producto_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_producto)"
+    },
+    {
+      "tabla": "regla_comision",
+      "nombre": "comision_valida",
+      "tipo": "c",
+      "definicion": "CHECK (((tipo_calculo = ANY (ARRAY['FIJO'::text, 'PORCENTAJE'::text])) AND ((tipo_calculo <> 'PORCENTAJE'::text) OR (valor <= 10000))))"
+    },
+    {
+      "tabla": "regla_comision",
+      "nombre": "fk_regla_comision_id_servicio",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_servicio) REFERENCES valhalla_private.servicio(id_servicio) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "regla_comision",
+      "nombre": "regla_comision_activo_check",
+      "tipo": "c",
+      "definicion": "CHECK ((activo = ANY (ARRAY[(0)::bigint, (1)::bigint])))"
+    },
+    {
+      "tabla": "regla_comision",
+      "nombre": "regla_comision_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_regla_comision)"
+    },
+    {
+      "tabla": "regla_comision",
+      "nombre": "regla_comision_valor_check",
+      "tipo": "c",
+      "definicion": "CHECK ((valor >= 0))"
+    },
+    {
+      "tabla": "rol",
+      "nombre": "rol_activo_check",
+      "tipo": "c",
+      "definicion": "CHECK ((activo = ANY (ARRAY[(0)::bigint, (1)::bigint])))"
+    },
+    {
+      "tabla": "rol",
+      "nombre": "rol_codigo_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (codigo)"
+    },
+    {
+      "tabla": "rol",
+      "nombre": "rol_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_rol)"
+    },
+    {
+      "tabla": "servicio",
+      "nombre": "servicio_activo_check",
+      "tipo": "c",
+      "definicion": "CHECK ((activo = ANY (ARRAY[(0)::bigint, (1)::bigint])))"
+    },
+    {
+      "tabla": "servicio",
+      "nombre": "servicio_elegible_cumpleanos_check",
+      "tipo": "c",
+      "definicion": "CHECK ((elegible_cumpleanos = ANY (ARRAY[(0)::bigint, (1)::bigint])))"
+    },
+    {
+      "tabla": "servicio",
+      "nombre": "servicio_elegible_fidelidad_check",
+      "tipo": "c",
+      "definicion": "CHECK ((elegible_fidelidad = ANY (ARRAY[(0)::bigint, (1)::bigint])))"
+    },
+    {
+      "tabla": "servicio",
+      "nombre": "servicio_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_servicio)"
+    },
+    {
+      "tabla": "servicio_precio_historial",
+      "nombre": "fk_servicio_precio_historial_id_servicio",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_servicio) REFERENCES valhalla_private.servicio(id_servicio) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "servicio_precio_historial",
+      "nombre": "servicio_precio_historial_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_servicio_precio)"
+    },
+    {
+      "tabla": "servicio_precio_historial",
+      "nombre": "servicio_precio_historial_precio_check",
+      "tipo": "c",
+      "definicion": "CHECK ((precio >= 0))"
+    },
+    {
+      "tabla": "solicitud_idempotente",
+      "nombre": "fk_solicitud_idempotente_id_sucursal",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_sucursal) REFERENCES valhalla_private.sucursal(id_sucursal)"
+    },
+    {
+      "tabla": "solicitud_idempotente",
+      "nombre": "fk_solicitud_idempotente_id_usuario",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_usuario) REFERENCES valhalla_private.usuario(id_usuario)"
+    },
+    {
+      "tabla": "solicitud_idempotente",
+      "nombre": "solicitud_idempotente_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (clave)"
+    },
+    {
+      "tabla": "sucursal",
+      "nombre": "sucursal_activo_check",
+      "tipo": "c",
+      "definicion": "CHECK ((activo = ANY (ARRAY[(0)::bigint, (1)::bigint])))"
+    },
+    {
+      "tabla": "sucursal",
+      "nombre": "sucursal_nombre_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (nombre)"
+    },
+    {
+      "tabla": "sucursal",
+      "nombre": "sucursal_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_sucursal)"
+    },
+    {
+      "tabla": "traslado_inventario",
+      "nombre": "fk_traslado_inventario_id_responsable",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_responsable) REFERENCES valhalla_private.usuario(id_usuario) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "traslado_inventario",
+      "nombre": "fk_traslado_inventario_id_sucursal_destino",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_sucursal_destino) REFERENCES valhalla_private.sucursal(id_sucursal) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "traslado_inventario",
+      "nombre": "fk_traslado_inventario_id_sucursal_origen",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_sucursal_origen) REFERENCES valhalla_private.sucursal(id_sucursal) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "traslado_inventario",
+      "nombre": "traslado_inventario_check",
+      "tipo": "c",
+      "definicion": "CHECK ((id_sucursal_origen <> id_sucursal_destino))"
+    },
+    {
+      "tabla": "traslado_inventario",
+      "nombre": "traslado_inventario_idempotency_key_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (idempotency_key)"
+    },
+    {
+      "tabla": "traslado_inventario",
+      "nombre": "traslado_inventario_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_traslado)"
+    },
+    {
+      "tabla": "usuario",
+      "nombre": "fk_usuario_id_rol",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_rol) REFERENCES valhalla_private.rol(id_rol) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "usuario",
+      "nombre": "usuario_activo_check",
+      "tipo": "c",
+      "definicion": "CHECK ((activo = ANY (ARRAY[(0)::bigint, (1)::bigint])))"
+    },
+    {
+      "tabla": "usuario",
+      "nombre": "usuario_auth_uid_fkey",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (auth_uid) REFERENCES auth.users(id) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "usuario",
+      "nombre": "usuario_auth_uid_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (auth_uid)"
+    },
+    {
+      "tabla": "usuario",
+      "nombre": "usuario_correo_check",
+      "tipo": "c",
+      "definicion": "CHECK ((correo = lower(TRIM(BOTH FROM correo))))"
+    },
+    {
+      "tabla": "usuario",
+      "nombre": "usuario_correo_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (correo)"
+    },
+    {
+      "tabla": "usuario",
+      "nombre": "usuario_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_usuario)"
+    },
+    {
+      "tabla": "usuario_sucursal",
+      "nombre": "fk_usuario_sucursal_id_sucursal",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_sucursal) REFERENCES valhalla_private.sucursal(id_sucursal) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "usuario_sucursal",
+      "nombre": "fk_usuario_sucursal_id_usuario",
+      "tipo": "f",
+      "definicion": "FOREIGN KEY (id_usuario) REFERENCES valhalla_private.usuario(id_usuario) ON DELETE RESTRICT"
+    },
+    {
+      "tabla": "usuario_sucursal",
+      "nombre": "usuario_sucursal_activo_check",
+      "tipo": "c",
+      "definicion": "CHECK ((activo = ANY (ARRAY[(0)::bigint, (1)::bigint])))"
+    },
+    {
+      "tabla": "usuario_sucursal",
+      "nombre": "usuario_sucursal_es_principal_check",
+      "tipo": "c",
+      "definicion": "CHECK ((es_principal = ANY (ARRAY[(0)::bigint, (1)::bigint])))"
+    },
+    {
+      "tabla": "usuario_sucursal",
+      "nombre": "usuario_sucursal_id_usuario_id_sucursal_key",
+      "tipo": "u",
+      "definicion": "UNIQUE (id_usuario, id_sucursal)"
+    },
+    {
+      "tabla": "usuario_sucursal",
+      "nombre": "usuario_sucursal_pkey",
+      "tipo": "p",
+      "definicion": "PRIMARY KEY (id_usuario_sucursal)"
+    }
+  ]
+}

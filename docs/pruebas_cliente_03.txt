@@ -1,0 +1,8 @@
+00:00 +0: loading test/cloud_client_test.dart
+00:00 +0: Solo acepta claves públicas y rechaza credenciales administrativas
+00:00 +1: Login obtiene identidad y permisos de PostgreSQL
+00:00 +2: Recuperación verifica código, cambia contraseña y cierra sesiones
+00:00 +3: Activación y reenvío utilizan confirmación de registro
+00:00 +4: El adaptador conserva clave idempotente y sucursal
+00:00 +5: Los errores de autenticación y permisos se muestran en español
+00:00 +6: All tests passed!
