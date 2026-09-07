@@ -1,0 +1,102 @@
+name: Compilar APK e IPA
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mobile-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  android:
+    name: Android APK
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Descargar codigo
+        uses: actions/checkout@v4
+
+      - name: Configurar Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Configurar Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Mostrar versiones
+        run: flutter --version
+
+      - name: Descargar dependencias
+        run: flutter pub get
+
+      - name: Compilar APK release
+        run: flutter build apk --release
+
+      - name: Preparar APK
+        run: cp build/app/outputs/flutter-apk/app-release.apk VALHALLA-android-release.apk
+
+      - name: Publicar APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: VALHALLA-APK
+          path: VALHALLA-android-release.apk
+          if-no-files-found: error
+          retention-days: 30
+
+  ios:
+    name: iOS IPA sin firma
+    runs-on: macos-14
+    timeout-minutes: 45
+
+    steps:
+      - name: Descargar codigo
+        uses: actions/checkout@v4
+
+      - name: Configurar Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Mostrar versiones
+        run: flutter --version
+
+      - name: Crear plataforma iOS si no existe
+        run: |
+          if [ ! -d ios ]; then
+            flutter create --platforms=ios --org com.valhalla .
+          fi
+
+      - name: Descargar dependencias
+        run: flutter pub get
+
+      - name: Compilar aplicacion iOS sin firma
+        run: flutter build ios --release --no-codesign
+
+      - name: Empaquetar IPA para Sideloadly
+        run: |
+          mkdir -p Payload
+          cp -R build/ios/iphoneos/Runner.app Payload/
+          zip -qry VALHALLA-ios-unsigned.ipa Payload
+          test -s VALHALLA-ios-unsigned.ipa
+
+      - name: Publicar IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: VALHALLA-IPA-SIN-FIRMA
+          path: VALHALLA-ios-unsigned.ipa
+          if-no-files-found: error
+          retention-days: 30
